@@ -1,0 +1,35 @@
+# .gitignore para proyectos de Data Analyst en Python
+
+# Ignorar archivos y directorios generados por Python
+__pycache__/           # Directorio con caché de Python
+*.py[cod]              # Archivos compilados de Python
+
+# Ignorar entornos virtuales (ajusta el nombre según el que uses)
+venv/                  # Directorio del entorno virtual (nombre común: venv)
+env/                   # Alternativa de nombre para entorno virtual
+ENV/                   # Otra posible denominación de entorno virtual
+env.bak/               # Copias de seguridad del entorno virtual
+venv.bak/              # Otra posible copia de seguridad
+
+# Ignorar los checkpoints de Jupyter Notebook
+.ipynb_checkpoints/     # Directorio donde se guardan los checkpoints automáticos
+
+# Opcional: Ignorar archivos de datos o resultados si no deseas versionarlos
+# Si tus datasets son muy grandes o sensibles, es recomendable ignorarlos
+# data/               # Descomenta esta línea si deseas ignorar toda la carpeta data
+
+# Generalmente es conveniente versionar los outputs procesados para reproducibilidad,
+# pero si prefieres ignorarlos, descomenta la siguiente línea:
+# outputs/
+
+# Ignorar archivos temporales y de log
+*.log                 # Archivos de registro (logs)
+*.tmp                 # Archivos temporales
+
+# Ignorar archivos de sistema (macOS, Windows)
+.DS_Store             # Archivo generado por macOS
+Thumbs.db             # Archivo generado por Windows
+
+# Ignorar configuraciones de editores de código
+.vscode/              # Configuraciones de Visual Studio Code
+.idea/                # Configuraciones de PyCharm u otros IDEs de JetBrains
